@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inteligencia Artificial 1</title>
+    <title>IA1 - Tarea 1</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -16,18 +16,26 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+
+    <script src="tarea-2.js"></script>
+
+    <script>
+        $(function(){
+            test(['A', 'DIRTY', 'DIRTY'], step);
+        });
+
+        function step(res){
+            let p = `<p>${res}</p>`;
+            $("#divConsola").append(p);            
+        }
+    </script>
 </head>
 <body>
     <div class="container">
-        <h1>Inteligencia Artificial 1</h1>
-        <h2>Tareas</h2>
-
-        <ul class="list-group">
-            <li class="list-group-item"><a href="tarea-1.html">Tarea 1 - Diplomas Python y JavaScript</a></li>
-            <li class="list-group-item"><a href="tarea-2.html">Tarea 2 - Reflex Agent</a></li>
-            <li class="list-group-item"><a href="problema-viajero.html">Tarea 3 - Problema del Viajero</a></li>
-        </ul>
-    </div> 
-
+        <h1>Intenligencia Artifcial 1 </h1>
+        <h2>Tarea 1 - Reflex Agent</h2>
+        <div id="divConsola">            
+        </div>
+    </div>
 </body>
 </html>
