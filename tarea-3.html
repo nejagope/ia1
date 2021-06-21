@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IA1 - Tarea 1</title>
+    <title>Tarea 3 - Problema del Viajero</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -17,25 +17,13 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
 
-    <script src="tarea-2.js"></script>
-
-    <script>
-        $(function(){
-            test(['A', 'DIRTY', 'DIRTY'], step);
-        });
-
-        function step(res){
-            let p = `<p>${res}</p>`;
-            $("#divConsola").append(p);            
-        }
-    </script>
 </head>
 <body>
     <div class="container">
         <h1>Inteligencia Artifcial 1 </h1>
-        <h2>Tarea 1 - Reflex Agent</h2>
-        <div id="divConsola">            
-        </div>
+        <h2>Tarea 3 - Problema del Viajero</h2>
+        <h3>La ruta ideal es A, C, D, E, B, A</h3>
+        <img src="tarea-3.svg" alt="árbol costo uniforme" width="100%">
     </div>
 </body>
 </html>
